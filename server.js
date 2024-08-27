@@ -36,7 +36,7 @@ app.get('/api/:name', (request, response)=>{
         response.json(rappers['unknown'])
     }
 })
-
+//we want the server to listen on hosting side port, if ours is not available
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is now running on port ${PORT} Betta Go Cath It!`)
 })
